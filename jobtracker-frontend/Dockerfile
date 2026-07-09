@@ -1,10 +1,9 @@
 FROM node:18-alpine AS builder
 WORKDIR /app
-ENV NODE_ENV=production
 
-# install deps
-COPY package.json ./
-RUN npm install --no-audit --no-fund
+# install deps including dev dependencies needed for build
+COPY package.json package-lock.json* ./
+RUN npm install --no-audit --no-fund --include=dev
 
 # build app
 COPY . .
