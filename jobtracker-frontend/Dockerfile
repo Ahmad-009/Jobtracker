@@ -1,12 +1,10 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
-
-# install deps including dev dependencies needed for build
 COPY package.json package-lock.json* ./
 RUN npm install --no-audit --no-fund --include=dev
-
-# build app
 COPY . .
+ARG VITE_API_URL
+ENV VITE_API_URL=$VITE_API_URL
 RUN npm run build
 
 FROM nginx:stable-alpine
