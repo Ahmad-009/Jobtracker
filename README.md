@@ -9,7 +9,6 @@
 ![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)
 ![Tests](https://img.shields.io/badge/Tests-29%20passing-brightgreen)
 ![Coverage](https://img.shields.io/badge/Coverage-63%25-yellow)
-![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
 
@@ -74,8 +73,8 @@ Key patterns: DTO pattern (entities are never returned directly), repository pat
 ### Backend
 
 ```bash
-git clone https://github.com/<your-username>/job-application-tracker.git
-cd job-application-tracker
+git clone https://github.com/Ahmad-009/Jobtracker.git
+cd Jobtracker
 
 # configure src/main/resources/application.properties with your DB credentials
 
@@ -183,13 +182,3 @@ jobtracker/
 - **Circular JSON serialization** from bidirectional JPA relationships was solved by never returning entities directly — DTOs only.
 - **N+1 queries** on `getById` (interviews and contacts loaded separately) required understanding lazy vs. eager loading trade-offs.
 - **CORS** blocked the frontend by default until a `CorsConfigurationSource` bean was added for `localhost:5173`.
-
-## Roadmap
-
-- [ ] Email reminders for upcoming interviews
-- [ ] CSV export of application history
-- [ ] Dark mode for the Kanban board
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for details.
