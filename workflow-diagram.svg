@@ -239,7 +239,7 @@
   <rect x="1152" y="410" width="408" height="56" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
   <use href="#icon-cloud" x="1164" y="424" width="24" height="24"/>
   <text x="1380" y="434" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">Deploy</text>
-  <text x="1380" y="452" text-anchor="middle" font-size="11.5" fill="#666">API → Render  ·  DB → Supabase</text>
+  <text x="1380" y="452" text-anchor="middle" font-size="11.5" fill="#666">API · Frontend · DB — all on Render</text>
 
   <!-- Runtime data flow -->
   <text x="1152" y="500" font-size="13" font-weight="700" fill="#2c6b3f">RUNTIME RESPONSE</text>
@@ -258,7 +258,7 @@
 
   <rect x="1152" y="758" width="408" height="50" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
   <use href="#icon-db" x="1164" y="770" width="24" height="24"/>
-  <text x="1380" y="788" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">PostgreSQL (Supabase, hosted)</text>
+  <text x="1380" y="788" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">PostgreSQL (Render, hosted)</text>
 
   <!-- connect Hibernate to PostgreSQL -->
   <path d="M 1100 733 C 1140 733, 1140 783, 1150 783" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>

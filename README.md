@@ -22,7 +22,7 @@ Job hunting means juggling dozens of applications across spreadsheets, browser t
 - 📊 A `/stats` endpoint for pipeline insight, plus paginated application listing
 - 🖱️ React Kanban frontend — drag cards between `APPLIED → INTERVIEWING → OFFERED / REJECTED`
 - 🧪 29 unit + integration tests (JUnit 5, Mockito, MockMvc) at 63% coverage via JaCoCo
-- 🐳 Dockerized and deployed — API on Render, database on Supabase
+- 🐳 Dockerized and deployed — backend, frontend, and PostgreSQL all on Render
 
 ## System Workflow
 
@@ -35,10 +35,10 @@ The diagram shows three phases: the React client authenticating and issuing requ
 | Layer | Technologies |
 |---|---|
 | **Backend** | Java 21, Spring Boot 3.5.14, Spring Security, Spring Data JPA / Hibernate, jjwt, Lombok, Jakarta Validation, SLF4J + Logback |
-| **Database** | PostgreSQL (hosted on Supabase in production) |
+| **Database** | PostgreSQL (hosted on Render in production) |
 | **Frontend** | React 18, Vite, React Router DOM, TanStack Query, Axios |
 | **Testing** | JUnit 5, Mockito, MockMvc, JaCoCo |
-| **DevOps** | Docker, Maven, deployed on Render |
+| **DevOps** | Docker, Maven, deployed on Render (backend, frontend, and database) |
 
 ## Architecture
 
@@ -67,7 +67,7 @@ Key patterns: DTO pattern (entities are never returned directly), repository pat
 ### Prerequisites
 - Java 21 (LTS)
 - Maven
-- PostgreSQL running locally (or a Supabase connection string)
+- PostgreSQL running locally (or a Render-hosted connection string)
 - Node.js 18+ (for the frontend)
 
 ### Backend
@@ -87,7 +87,7 @@ The API starts on `http://localhost:8080`.
 ### Frontend
 
 ```bash
-cd frontend
+cd jobtracker-frontend
 npm install
 npm run dev
 ```
@@ -130,6 +130,24 @@ All routes except `/auth/register` and `/auth/login` require a `Authorization: B
   "totalPages": 5,
   "currentPage": 0,
   "size": 10
+}
+```
+
+### Example: stats response
+
+```json
+{
+  "totalApplications": 47,
+  "byStatus": {
+    "APPLIED": 20,
+    "INTERVIEWING": 12,
+    "OFFERED": 3,
+    "REJECTED": 10,
+    "WITHDRAWN": 2
+  },
+  "responseRate": 53.2,
+  "thisMonth": 15,
+  "thisWeek": 4
 }
 ```
 
