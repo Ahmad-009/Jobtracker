@@ -1,0 +1,279 @@
+<svg viewBox="0 0 1600 980" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#888"/>
+    </marker>
+
+    <!-- ============ ICONS ============ -->
+    <g id="icon-java">
+      <path d="M2,14 Q2,20 12,20 Q22,20 22,14 L20,14 Q20,17 12,17 Q4,17 4,14 Z" fill="#e6762a"/>
+      <path d="M7,13 C5,11 6,9 8,8 C6,10 7,11 8,12 Z" fill="#e6762a"/>
+      <path d="M12,13 C10,11 11,9 13,8 C11,10 12,11 13,12 Z" fill="#e6762a"/>
+      <ellipse cx="12" cy="14.5" rx="9" ry="2.2" fill="none" stroke="#e6762a" stroke-width="1"/>
+    </g>
+
+    <g id="icon-spring">
+      <circle cx="12" cy="12" r="10" fill="#5fb832"/>
+      <path d="M17,7 C13,6 8,7 7,11 C6,14 8,16 10,15.5 C7,17.5 5,15 5.5,12.5 C6.5,7.5 13,5.5 17,7 Z" fill="#fff"/>
+      <path d="M7,17 C11,18 16,17 17,13 C18,10 16,8 14,8.5 C17,6.5 19,9 18.5,11.5 C17.5,16.5 11,18.5 7,17 Z" fill="#fff"/>
+    </g>
+
+    <g id="icon-react">
+      <circle cx="12" cy="12" r="2.1" fill="#149eca"/>
+      <g fill="none" stroke="#149eca" stroke-width="1.4">
+        <ellipse cx="12" cy="12" rx="10" ry="4" />
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+      </g>
+    </g>
+
+    <g id="icon-db">
+      <ellipse cx="12" cy="6" rx="9" ry="3.2" fill="#336791"/>
+      <path d="M3,6 L3,18 C3,19.8 7,21.2 12,21.2 C17,21.2 21,19.8 21,18 L21,6" fill="none" stroke="#336791" stroke-width="2"/>
+      <path d="M3,12 C3,13.8 7,15.2 12,15.2 C17,15.2 21,13.8 21,12" fill="none" stroke="#336791" stroke-width="2"/>
+    </g>
+
+    <g id="icon-docker">
+      <rect x="2" y="10" width="5" height="4.2" fill="#2496ed"/>
+      <rect x="8" y="10" width="5" height="4.2" fill="#2496ed"/>
+      <rect x="8" y="4.5" width="5" height="4.2" fill="#2496ed"/>
+      <rect x="14" y="10" width="5" height="4.2" fill="#2496ed"/>
+      <path d="M0,15 C0,19 4,20.5 11,20.5 C18,20.5 21.5,17.5 22.5,14.3 C23.5,14.5 24.5,13.5 24,12 C22.8,12 22,12.5 21.7,13.2 C20,12.6 18,12.8 16.5,14.3 L1,14.3 Z" fill="#2496ed"/>
+    </g>
+
+    <g id="icon-lock">
+      <rect x="5" y="10" width="14" height="11" rx="2" fill="#c9a227"/>
+      <path d="M8,10 L8,7 C8,4 10,2 12,2 C14,2 16,4 16,7 L16,10" fill="none" stroke="#c9a227" stroke-width="2.2"/>
+      <circle cx="12" cy="15" r="1.8" fill="#fff"/>
+      <rect x="11.2" y="15.5" width="1.6" height="3" fill="#fff"/>
+    </g>
+
+    <g id="icon-cloud">
+      <path d="M6,18 C2.5,18 0.5,15.5 1.5,12.8 C2.2,10.9 4.2,10 5.5,10.3 C6.3,7.2 9.5,5.5 12.4,6.6 C14.6,7.4 15.9,9.3 15.8,11 C18.5,10.7 21,12.5 21,15 C21,17 19.2,18 17.5,18 Z" fill="#7a8b99"/>
+    </g>
+
+    <g id="icon-bolt">
+      <path d="M13,2 L4,14 L11,14 L9,22 L20,9 L12,9 Z" fill="#7c4dff"/>
+    </g>
+
+    <g id="icon-gear">
+      <path d="M12 2 L13.5 4.3 L16.2 3.8 L16.9 6.5 L19.6 7.2 L19.1 9.9 L21.4 11.4 L20 13.7 L21.4 16 L19.1 17.5 L19.6 20.2 L16.9 20.9 L16.2 23.6 L13.5 23.1 L12 25.4"
+            transform="scale(0.78) translate(1,-1)" fill="none"/>
+      <circle cx="12" cy="12" r="9" fill="none" stroke="#8a6d3b" stroke-width="2.2" stroke-dasharray="2.6,2.6"/>
+      <circle cx="12" cy="12" r="4" fill="#8a6d3b"/>
+    </g>
+
+    <g id="icon-test">
+      <path d="M9,2 L15,2 L15,8 L20,18 C21,20 19.5,22 17.5,22 L6.5,22 C4.5,22 3,20 4,18 L9,8 Z" fill="none" stroke="#3ba55d" stroke-width="1.8"/>
+      <path d="M6,17 L18,17" stroke="#3ba55d" stroke-width="1.8"/>
+      <circle cx="9" cy="14" r="1" fill="#3ba55d"/>
+      <circle cx="14" cy="15.5" r="1" fill="#3ba55d"/>
+    </g>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1600" height="980" fill="#f7f7f4"/>
+  <rect x="10" y="10" width="1580" height="960" rx="12" fill="#f7f7f4" stroke="#d8d8d2" stroke-width="1.5"/>
+
+  <!-- column tints -->
+  <rect x="24" y="80" width="410" height="820" rx="10" fill="#eef4fb"/>
+  <rect x="450" y="80" width="670" height="820" rx="10" fill="#fbfbf9"/>
+  <rect x="1136" y="80" width="440" height="820" rx="10" fill="#eef8f0"/>
+
+  <!-- title -->
+  <text x="800" y="45" text-anchor="middle" font-size="27" font-weight="700" fill="#111">Job Application Tracker — System Workflow</text>
+  <line x1="500" y1="60" x2="1100" y2="60" stroke="#ccc" stroke-width="1"/>
+
+  <!-- column headers -->
+  <rect x="24" y="80" width="410" height="34" rx="10" fill="#dbe8f8"/>
+  <text x="229" y="103" text-anchor="middle" font-size="15" font-weight="700" fill="#1a3c66">1. CLIENT LAYER</text>
+
+  <rect x="450" y="80" width="670" height="34" rx="10" fill="#e9e8e2"/>
+  <text x="785" y="103" text-anchor="middle" font-size="15" font-weight="700" fill="#3a3a34">2. BACKEND REQUEST PIPELINE — Spring Boot (Layered Architecture)</text>
+
+  <rect x="1136" y="80" width="440" height="34" rx="10" fill="#d7efdd"/>
+  <text x="1356" y="103" text-anchor="middle" font-size="15" font-weight="700" fill="#1e5c30">3. PERSISTENCE, TESTING &amp; DEPLOYMENT</text>
+
+  <!-- ============ AUTH LANE ============ -->
+  <text x="46" y="140" font-size="13" font-weight="700" fill="#3a4a5c">AUTHENTICATION</text>
+
+  <rect x="46" y="150" width="366" height="56" rx="9" fill="#ffffff" stroke="#b9c8dc" stroke-width="1.4"/>
+  <use href="#icon-lock" x="60" y="164" width="26" height="26"/>
+  <text x="230" y="174" text-anchor="middle" font-size="14.5" font-weight="600" fill="#111">User / Job Seeker</text>
+  <text x="230" y="192" text-anchor="middle" font-size="11.5" fill="#666">initiates login / register</text>
+
+  <line x1="229" y1="206" x2="229" y2="238" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="46" y="238" width="366" height="56" rx="9" fill="#ffffff" stroke="#b9c8dc" stroke-width="1.4"/>
+  <use href="#icon-react" x="60" y="252" width="26" height="26"/>
+  <use href="#icon-bolt" x="382" y="252" width="18" height="18"/>
+  <text x="230" y="262" text-anchor="middle" font-size="14.5" font-weight="600" fill="#111">React Frontend (Vite)</text>
+  <text x="230" y="280" text-anchor="middle" font-size="11.5" fill="#666">Login / Register form</text>
+
+  <path d="M 412 250 C 435 235, 435 195, 460 168" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="418" y="220" font-size="11" fill="#555">POST /auth/login</text>
+
+  <!-- Col2 auth -->
+  <rect x="460" y="140" width="200" height="56" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <use href="#icon-java" x="472" y="153" width="22" height="22"/>
+  <text x="565" y="164" text-anchor="middle" font-size="14" font-weight="600" fill="#111">AuthController</text>
+  <text x="565" y="182" text-anchor="middle" font-size="11" fill="#666">/register · /login · /me</text>
+
+  <line x1="560" y1="196" x2="560" y2="228" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="460" y="228" width="220" height="56" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <use href="#icon-spring" x="472" y="242" width="22" height="22"/>
+  <text x="580" y="252" text-anchor="middle" font-size="14" font-weight="600" fill="#111">UserServiceImpl</text>
+  <text x="580" y="270" text-anchor="middle" font-size="11" fill="#666">BCrypt password check</text>
+
+  <line x1="680" y1="256" x2="720" y2="256" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="720" y="228" width="240" height="56" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <use href="#icon-lock" x="732" y="242" width="22" height="22"/>
+  <text x="850" y="252" text-anchor="middle" font-size="14" font-weight="600" fill="#111">JwtServiceImpl</text>
+  <text x="850" y="270" text-anchor="middle" font-size="11" fill="#666">issues JWT · 24h expiry</text>
+
+  <line x1="840" y1="228" x2="840" y2="196" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="720" y="140" width="240" height="56" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <text x="840" y="164" text-anchor="middle" font-size="14" font-weight="600" fill="#111">AuthResponseDTO</text>
+  <text x="840" y="182" text-anchor="middle" font-size="11" fill="#666">{ token, user }</text>
+
+  <path d="M 720 168 C 600 155, 500 150, 412 172" fill="none" stroke="#8a8a8a" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+  <text x="565" y="130" text-anchor="middle" font-size="11" fill="#777">token stored client-side</text>
+
+  <!-- ============ CRUD LANE ============ -->
+  <text x="46" y="330" font-size="13" font-weight="700" fill="#3a4a5c">APPLICATION / INTERVIEW / CONTACT CRUD</text>
+
+  <rect x="46" y="340" width="366" height="60" rx="9" fill="#ffffff" stroke="#b9c8dc" stroke-width="1.4"/>
+  <text x="230" y="364" text-anchor="middle" font-size="14.5" font-weight="600" fill="#111">User works the Kanban board</text>
+  <text x="230" y="382" text-anchor="middle" font-size="11.5" fill="#666">drags card between columns / fills form</text>
+
+  <line x1="229" y1="400" x2="229" y2="432" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="46" y="432" width="366" height="60" rx="9" fill="#ffffff" stroke="#b9c8dc" stroke-width="1.4"/>
+  <use href="#icon-react" x="60" y="448" width="26" height="26"/>
+  <text x="240" y="458" text-anchor="middle" font-size="14.5" font-weight="600" fill="#111">React Frontend</text>
+  <text x="240" y="476" text-anchor="middle" font-size="11.5" fill="#666">Axios + TanStack Query</text>
+
+  <line x1="412" y1="462" x2="460" y2="462" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="416" y="450" font-size="10.5" fill="#555">Authorization: Bearer &lt;JWT&gt;</text>
+
+  <!-- Backend API dashed subgroup -->
+  <rect x="450" y="325" width="670" height="500" rx="10" fill="none" stroke="#b3b3ac" stroke-width="1.3" stroke-dasharray="6,5"/>
+  <text x="466" y="345" font-size="12.5" font-weight="700" fill="#555">BACKEND API (Spring Boot)</text>
+
+  <rect x="470" y="432" width="300" height="60" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <use href="#icon-lock" x="482" y="448" width="24" height="24"/>
+  <text x="630" y="458" text-anchor="middle" font-size="14" font-weight="600" fill="#111">JwtAuthFilter</text>
+  <text x="630" y="476" text-anchor="middle" font-size="11" fill="#666">validates token → SecurityContextHolder</text>
+
+  <line x1="620" y1="492" x2="620" y2="524" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="470" y="524" width="300" height="60" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <use href="#icon-java" x="482" y="540" width="24" height="24"/>
+  <text x="630" y="550" text-anchor="middle" font-size="14" font-weight="600" fill="#111">Controller Layer</text>
+  <text x="630" y="568" text-anchor="middle" font-size="11" fill="#666">JobApplication · Contact · Interview · Stats</text>
+
+  <line x1="620" y1="584" x2="620" y2="616" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="470" y="616" width="300" height="60" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <use href="#icon-spring" x="482" y="632" width="24" height="24"/>
+  <text x="630" y="642" text-anchor="middle" font-size="14" font-weight="600" fill="#111">Service Layer</text>
+  <text x="630" y="660" text-anchor="middle" font-size="11" fill="#666">ownership checks · business logic · DTO mapping</text>
+
+  <line x1="620" y1="676" x2="620" y2="708" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="470" y="708" width="300" height="50" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <text x="630" y="738" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">Repository Layer (Spring Data JPA)</text>
+
+  <line x1="770" y1="733" x2="810" y2="733" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="810" y="708" width="290" height="50" rx="9" fill="#ffffff" stroke="#ccc" stroke-width="1.4"/>
+  <use href="#icon-db" x="822" y="720" width="22" height="22"/>
+  <text x="960" y="738" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">Hibernate → generates SQL</text>
+
+  <!-- exception branch -->
+  <line x1="770" y1="646" x2="810" y2="646" stroke="#a33" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+  <rect x="810" y="620" width="290" height="52" rx="9" fill="#fdf3f3" stroke="#c66" stroke-width="1.3"/>
+  <text x="955" y="642" text-anchor="middle" font-size="13" font-weight="600" fill="#822">GlobalExceptionHandler</text>
+  <text x="955" y="659" text-anchor="middle" font-size="10.5" fill="#822">@ControllerAdvice → JSON error + status code</text>
+
+  <!-- ============ COL 3 ============ -->
+  <text x="1152" y="140" font-size="13" font-weight="700" fill="#2c6b3f">DEV-TIME: BUILD &amp; TEST</text>
+
+  <rect x="1152" y="150" width="408" height="50" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <use href="#icon-gear" x="1164" y="163" width="24" height="24"/>
+  <text x="1370" y="180" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">mvn test  (Maven build)</text>
+
+  <line x1="1356" y1="200" x2="1356" y2="230" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="1152" y="230" width="128" height="68" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <use href="#icon-test" x="1164" y="242" width="22" height="22"/>
+  <text x="1226" y="270" text-anchor="middle" font-size="11.5" font-weight="600" fill="#111">Unit Tests</text>
+  <text x="1226" y="285" text-anchor="middle" font-size="10" fill="#666">JUnit5 + Mockito</text>
+
+  <rect x="1288" y="230" width="128" height="68" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <use href="#icon-test" x="1300" y="242" width="22" height="22"/>
+  <text x="1362" y="270" text-anchor="middle" font-size="11.5" font-weight="600" fill="#111">Integration</text>
+  <text x="1362" y="285" text-anchor="middle" font-size="10" fill="#666">MockMvc</text>
+
+  <rect x="1424" y="230" width="136" height="68" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <use href="#icon-test" x="1436" y="242" width="22" height="22"/>
+  <text x="1492" y="270" text-anchor="middle" font-size="11.5" font-weight="600" fill="#111">Coverage</text>
+  <text x="1492" y="285" text-anchor="middle" font-size="10" fill="#666">JaCoCo · 29 tests · 63%</text>
+
+  <line x1="1226" y1="298" x2="1300" y2="330" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1362" y1="298" x2="1362" y2="330" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1492" y1="298" x2="1420" y2="330" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="1152" y="330" width="408" height="50" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <use href="#icon-docker" x="1164" y="343" width="24" height="24"/>
+  <text x="1380" y="360" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">Docker build (containerized)</text>
+
+  <line x1="1356" y1="380" x2="1356" y2="410" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="1152" y="410" width="408" height="56" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <use href="#icon-cloud" x="1164" y="424" width="24" height="24"/>
+  <text x="1380" y="434" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">Deploy</text>
+  <text x="1380" y="452" text-anchor="middle" font-size="11.5" fill="#666">API → Render  ·  DB → Supabase</text>
+
+  <!-- Runtime data flow -->
+  <text x="1152" y="500" font-size="13" font-weight="700" fill="#2c6b3f">RUNTIME RESPONSE</text>
+
+  <rect x="1152" y="510" width="408" height="56" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <text x="1356" y="533" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">JSON Response</text>
+  <text x="1356" y="551" text-anchor="middle" font-size="11" fill="#666">200 / 201 / 204 + status codes</text>
+
+  <line x1="1356" y1="640" x2="1356" y2="566" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="1152" y="640" width="408" height="58" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <text x="1356" y="664" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">Response DTO built</text>
+  <text x="1356" y="682" text-anchor="middle" font-size="11" fill="#666">entities never exposed directly</text>
+
+  <line x1="1356" y1="758" x2="1356" y2="698" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="1152" y="758" width="408" height="50" rx="9" fill="#ffffff" stroke="#a9d4b4" stroke-width="1.4"/>
+  <use href="#icon-db" x="1164" y="770" width="24" height="24"/>
+  <text x="1380" y="788" text-anchor="middle" font-size="13.5" font-weight="600" fill="#111">PostgreSQL (Supabase, hosted)</text>
+
+  <!-- connect Hibernate to PostgreSQL -->
+  <path d="M 1100 733 C 1140 733, 1140 783, 1150 783" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- error handler also returns json -->
+  <path d="M 1100 646 C 1130 610, 1140 560, 1150 538" fill="none" stroke="#a33" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+
+  <!-- long arrow back to frontend, routed along the bottom to avoid overlap -->
+  <path d="M 1200 566 C 1000 900, 500 900, 245 492" fill="none" stroke="#8a8a8a" stroke-width="1.6" stroke-dasharray="5,4" marker-end="url(#arrowGray)"/>
+  <text x="720" y="905" text-anchor="middle" font-size="12" fill="#666">JSON response → card moves column / live UI update</text>
+
+  <!-- legend -->
+  <rect x="46" y="850" width="366" height="42" rx="8" fill="#ffffff" stroke="#dcdcd6" stroke-width="1"/>
+  <line x1="58" y1="864" x2="80" y2="864" stroke="#222" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <text x="86" y="868" font-size="11" fill="#555">request path</text>
+  <line x1="58" y1="880" x2="80" y2="880" stroke="#888" stroke-width="1.6" stroke-dasharray="4,3" marker-end="url(#arrowGray)"/>
+  <text x="86" y="884" font-size="11" fill="#555">response / error path</text>
+</svg>
